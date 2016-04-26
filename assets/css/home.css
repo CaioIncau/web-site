@@ -1,5 +1,6 @@
 header,body{
     background-image: url("../images/bg.png");
+    padding: 0 3em;
 }
 
 .container{
@@ -7,9 +8,6 @@ header,body{
     margin: 0 auto;
 }
 
-.timeline,.profile{
-    margin: 0 3em;
-}
 .profile{
     line-height: 1.6em;
     font-weight: 300;
@@ -31,6 +29,11 @@ header,body{
     display: block;
     padding: 1em 0;
     font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+
+.email{
+    border-bottom: 1px solid gray;
+    padding-bottom: 1em;
 }
 
 .timeline-title{
@@ -84,4 +87,8 @@ header,body{
 footer{
     text-align: center;
     padding-top: 3em;
+}
+
+@media(min-width:900px){
+    
 }
