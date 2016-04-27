@@ -3,6 +3,10 @@ header,body{
     padding: 0 3em;
 }
 
+body{
+    border-top: 4px solid #f5b70e;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -36,7 +40,7 @@ header,body{
     padding-bottom: 1em;
 }
 
-.timeline-title{
+.subtitle{
     display: inline-block;
     vertical-align: middle;
     font-weight: 700;
@@ -44,7 +48,7 @@ header,body{
     width: 100%;
     text-indent: .5em;
 }
-.timeline-title:after{
+.subtitle:after{
     display: inline-block;
     height: 3px;
     background-color: #f5b70e;
@@ -66,7 +70,7 @@ header,body{
 }
 
 .main-header{
-    border-top: 4px solid #f5b70e;
+    
     padding: 1em 0;
     text-align: center;
     font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
@@ -86,9 +90,63 @@ header,body{
 
 footer{
     text-align: center;
-    padding-top: 3em;
+    margin: 3em 0 2em 0;
+    border-top: 1px solid;
+    padding-top: 1em;
 }
 
+.skills{ display: none;}
+
+.skill-bar{
+    width: 100%;
+    height: .5em;
+    background-color: black;
+}
+
+.skill-bar-level{
+    margin: 0;
+    height: 100%;
+    background: #f5b70e;
+}
+.skill-bar-level:after{
+    content: "▼";
+    position: relative;
+    bottom: .8em;
+    left:  calc(100% - .5em);
+}
+
+.skill-bar-level-75{
+    width: 75%;
+}
+
+.skill-bar-level-50{
+    width: 50%;
+}
+
+.signature{
+    width: 260px;
+}
+
+@media(min-width:500px){
+    .signature{
+        width: auto;
+    }
+}
 @media(min-width:900px){
-    
+    .main-container{
+        display: flex;
+    }
+    .profile{
+        flex: 1;
+    }
+    .timeline-container{
+        flex: 2;
+        padding-left: 3em;
+    }
+    .timeline{
+        margin-top: 0;
+    }
+    .skills{
+        display: block;
+    }
 }
